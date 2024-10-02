@@ -25,18 +25,47 @@ $conn->close();
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file here -->
 </head>
+
 <body>
-    <h1>Login</h1>
-    <form action="" method="post">
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <input type="submit" value="Login">
-    </form>
-    <p>Don't have an account? <a href="register.php">Register here</a></p>
+    <!-- Taskbar Section -->
+    <div class="taskbar">
+        <div class="taskbar-left">
+            <h1>Login Page</h1>
+        </div>
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <div class="container">
+            <div class="login-box">
+                <h2>Login</h2>
+                <form action="" method="post">
+                    <div class="textbox">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" placeholder="Username" required>
+                    </div>
+                    <div class="textbox">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                    </div>
+                    <input class="btn" type="submit" value="Login">
+                </form>
+            </div>
+            <p class="register-link">Don't have an account? <a href="register.php">Register here</a></p>
+        </div>
+    </div>
 </body>
+
 </html>
