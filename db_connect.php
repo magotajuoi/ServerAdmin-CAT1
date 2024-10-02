@@ -2,7 +2,7 @@
 // db_connect.php
 $servername = "localhost"; // Database server
 $username = "root"; // Database username
-$password = ""; // Database password
+$password = "12345"; // Database password
 $dbname = "CAT1"; // Database name
 
 // Create connection
